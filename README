@@ -1,14 +1,22 @@
-Initial Commit,
-Project SnowBall is a simple VR ski game.
+*** Project SnowBall ***
 
-Unity 2017.2.1 application:
-* uses Mixed Reality Toolkit for Camera, Controller scripts
- -> MRTK is added as part of this repository
-* terrain built in L3DT and imported into Unity for additional changes
+This is a tinkering project of a simple VR ski game.
 
-Uses Unity Store Asset packs not included in repository:
-1. Korea native trees ( url )
-2. Winter Ground Pack ( url )
+* It requires Unity 2017.2.1 and a Windows Mixed Reality Headset
+* Optionally, uses Unity Store Asset packs (import with default location):
+- Korea native trees ( see asset korea-native-trees-7714 )
+
+* VR driven by Mixed Reality Toolkit for Camera scripts
+* Terrain built in L3DT and imported into Unity for additional changes
+* Mixed Reality Toolkit is included in this repository
+* Ski controller drives player movements via Unity Physics
+* Ski poles (hand controllers) are simple trigger to accelerate player. 
+
+Originally, it also used the "Winter Ground Pack", but this has been replaced
+for demonstration with some free snow textures from CGTextures.com.
+
+SkyBox texture is sky texture with a 360 mountain panorama, and will be
+substituted with a higher quality skybox image.
 
 Copyright Matt Larson
 All Rights Reserved
