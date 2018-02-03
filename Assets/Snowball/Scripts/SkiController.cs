@@ -53,7 +53,7 @@ public class SkiController : MonoBehaviour {
 			else if (z < -180)
 				z = z + 360f;
 			
-			float rotationFactor = -z * 0.5f;
+			float rotationFactor = -z * 2f;
 
 			// Give each a default rotation
 			Quaternion q = new Quaternion();
