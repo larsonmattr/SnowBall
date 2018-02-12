@@ -36,6 +36,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4299862989922938}
+  - component: {fileID: 114922334782608436}
   m_Layer: 0
   m_Name: SkiChair
   m_TagString: Untagged
@@ -66,15 +67,15 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1130638805696022}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -12.974274, y: -0.5, z: -11.909424}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4759124382545404}
   - {fileID: 4850135962460342}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!4 &4759124382545404
 Transform:
   m_ObjectHideFlags: 1
@@ -82,7 +83,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1114155474016472}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -0.13648, y: 2.4441135, z: -1.2966528}
+  m_LocalPosition: {x: -0.13648, y: -3.444113, z: -1.2966528}
   m_LocalScale: {x: 332.5688, y: 69.05784, z: 17.000723}
   m_Children: []
   m_Father: {fileID: 4299862989922938}
@@ -95,7 +96,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1433789953167096}
   m_LocalRotation: {x: -0.8343714, y: 2.940558e-17, z: -3.0062837e-17, w: 0.55120265}
-  m_LocalPosition: {x: -0.13648, y: 0.58469725, z: -0.66069967}
+  m_LocalPosition: {x: -0.13648, y: -5.284697, z: -0.66069967}
   m_LocalScale: {x: 523.8507, y: 21.066738, z: 125.62365}
   m_Children: []
   m_Father: {fileID: 4299862989922938}
@@ -183,3 +184,33 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1114155474016472}
   m_Mesh: {fileID: 4300000, guid: 1f2bed6e32495cd46be6f07426bd5d8b, type: 3}
+--- !u!114 &114922334782608436
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1130638805696022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13996edf1a4348042bd468e4ac2ce510, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  isMoving: 1
+  rotationDamping: 6
+  rateMovement: 6
+  waypointIndex: 0
