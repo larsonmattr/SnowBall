@@ -12,7 +12,7 @@ using UnityEngine;
 public class SkiChairWayPoints : MonoBehaviour {
 
 	//This variable is an array. []< that is an array container if you didnt know. It holds all the Waypoint Objects that you assign in the inspector.
-	public GameObject[] waypoints;
+	public Transform[] waypoints;
 	public bool isMoving = true;
 	public float rotationDamping = 6.0f; // speed to rotate to face next target
 	public float rateMovement = 6.0f;
@@ -28,17 +28,16 @@ public class SkiChairWayPoints : MonoBehaviour {
 	void Update () {
 
 		if (isMoving) {
-			GameObject target = waypoints[waypointIndex];
-			Transform t = target.transform;
+			Transform target = waypoints[waypointIndex];
 
 			// Smooth rotate towards next waypoint
 			//Look at the active waypoint.
-			Quaternion rotation = Quaternion.LookRotation(t.position - transform.position);
+			Quaternion rotation = Quaternion.LookRotation(target.position - transform.position);
 			//Make the rotation nice and smooth.
 			transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * rotationDamping);
 			 
 			// Smooth translate towards the next waypoint.
-			Vector3 direction = t.position - transform.position;
+			Vector3 direction = target.position - transform.position;
 			float d = direction.magnitude;
 			direction.Normalize();
 			float deltaMove = rateMovement * Time.deltaTime;
